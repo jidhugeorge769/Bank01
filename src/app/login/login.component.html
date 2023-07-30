@@ -1,0 +1,28 @@
+
+<h3 class="text-danger p-3">{{data}}</h3>
+
+
+    <div class="container border border-white w-50 bg-dark text-white mt-5 p-3" style="border-radius: 30px;">
+        <h1 class="text-center">LOGIN PAGE</h1>
+        <form action="">
+
+            <div class="mt-2 p-2">
+                <input (change)="unameChange($event)" [placeholder]="placeholderdata1" id="a2" class="form-control p-2 " type="text" >
+            </div>
+           
+            <div class="mt-2 p-2">
+                <input id="p2" class="form-control p-2" type="password" placeholder="enter password">
+            </div>
+
+            <div class="mt-2 p-2 text-center">
+                <button (click)="login()" type="button" class="btn btn-outline-light bg-info">Login</button>
+            </div>
+
+            <a style="text-decoration: none;" class="fs-5 " href="">create account</a>
+
+
+        </form>
+
+    </div>    
+
+

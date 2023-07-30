@@ -1,0 +1,35 @@
+DECORATOR
+-------------------
+
+- @ is used to denote decorators
+- used to define metadatas
+
+Life CYcle of Angular
+----------------------------
+
+constructor ---> ngOnInit ----> other methods
+
+DATA BINDING
+----------------------------
+
+ts             --->       html
+component                   View
+
+1- ONE WAY DATA BINDING-------
+-----------------------------------
+
+1.1 Component to view data sharing
+----------------------------------------
+
+    1.1.1  -  String Interpollation   {{}}
+
+    1.1.2  -  Property Interpollation  [PropertyName]="bindingData" 
+
+
+1.2  VIEW TO Component
+------------------------------
+
+  1.2.1  event binding      (eventName)='methodName()'   eg: click,....
+
+  1.2.2  $event binding    (eventName)='methodName($event)'  eg:change,.......
+
