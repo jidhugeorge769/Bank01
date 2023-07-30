@@ -7,15 +7,15 @@
         <form action="">
 
             <div class="mt-2 p-2">
-                <input (change)="unameChange($event)" [placeholder]="placeholderdata1" id="a2" class="form-control p-2 " type="text" >
+                <input #uname [placeholder]="placeholderdata1" id="a2" class="form-control p-2 " type="text" >
             </div>
            
             <div class="mt-2 p-2">
-                <input id="p2" class="form-control p-2" type="password" placeholder="enter password">
+                <input #psw id="p2" class="form-control p-2" type="password" placeholder="enter password">
             </div>
 
             <div class="mt-2 p-2 text-center">
-                <button (click)="login()" type="button" class="btn btn-outline-light bg-info">Login</button>
+                <button (click)="login(uname,psw)" type="button" class="btn btn-outline-light bg-info">Login</button>
             </div>
 
             <a style="text-decoration: none;" class="fs-5 " href="">create account</a>

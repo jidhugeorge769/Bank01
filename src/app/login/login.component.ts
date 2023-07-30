@@ -11,23 +11,28 @@ export class LoginComponent implements OnInit {
   
   placeholderdata1="enter account number"
 
+  username:any
+  password:any
+
   constructor()  { }
 
   ngOnInit(): void {
 
   }
 
-  login(){
+  login(a:any,b:any){
 
-    alert("login clicked")
-  }
+    this.username=a.value
 
-  unameChange(event:any){
+    this.password=b.value
 
-    console.log(event.target.value);
+    console.log(this.username,this.password);
     
+    alert("login clicked")
+
+
   }
-  
+
 
 
 }
